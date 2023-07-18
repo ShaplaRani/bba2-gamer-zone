@@ -2,22 +2,30 @@
     padding:0px;
     box-sizing: border-box;
 }
-*{
+body{
     font-family: 'Open Sans', sans-serif;
     font-family: 'Poppins', sans-serif;
     font-family: 'Work Sans', sans-serif;
 }
+/* share related style */
+.btn-primary{}
+.btn-secondary{}
+.text-primary-color{
+    color:#FF42A5;
+}
 
+/* nav related style */
 nav{
     background-color: #fff;
 }
 .nav-container{
     max-width: 1400px;
-    margin:0 auto;
+    margin:45px auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border:1px solid red;
+    text-align: center;
+ 
 }
 .logo-container{
     width:50%;
@@ -27,6 +35,7 @@ nav{
 .logo-container img{
        width:50px;
        object-fit:cover;
+       margin-right:20px;
 }
 .logo-container h2{
     text-align: center;
@@ -39,4 +48,78 @@ nav{
 .nav-items-container{
     width:50%;
     display: flex;
+    justify-content:space-between;
+    margin-right:32px;
+    align-items: center;
+}
+.nav-items-container a{
+       text-decoration: none;
+       color: #3C354F;
+text-align: center;
+
+font-size: 18px;
+
+font-weight: 500;
+}
+.nav-items-container .followus-btn{
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+    padding:20px 30px;
+    
+    text-align: center;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.nav-items-container .followus-btn .youtube{
+      color:red;
+}
+
+/* banner related style */
+.banner{
+
+}
+.banner-container{
+    max-width:1400px;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    border:1px solid red;
+}
+.banner-content{
+    width:50%;
+}
+.banner-content 
+
+
+.banner-img{
+    width:50%;
+}
+/* Responsive media query */
+/* mobile devices */
+
+@media screen and (max-width:576px) {
+    .nav-container,
+    .nav-items-container{
+        flex-direction: column;
+    }
+    .nav-items-container a{
+        margin-top:20px;
+    }
+}
+   
+@media screen and (min-width:576px) and (max-width:992px) {
+    .nav-container{
+        flex-direction: column;
+    }
+
+    .logo-container{
+        width: 20%;
+        text-align: center;
+    }
+    .nav-items-container{
+        margin-top: 30px;
+        width: 80%;
+    }
 }
