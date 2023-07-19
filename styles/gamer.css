@@ -124,7 +124,9 @@ font-weight: 500;
     width:50%;
     margin:0 auto;
     margin-top:40px;
-    fill: linear-gradient(223deg, rgba(140, 87, 238, 0.03) 0%, rgba(241, 68, 174, 0.03) 100%);
+    background-image: url('../images/Group\ 14.png'),linear-gradient(223deg, rgba(140, 87, 238, 0.03) 0%, rgba(241, 68, 174, 0.03) 100%);
+    background-blend-mode: overlay;
+    background-size: cover; 
 }
 .banner-content h2{
     color: #0B0223;
