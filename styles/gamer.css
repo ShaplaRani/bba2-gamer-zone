@@ -31,6 +31,20 @@ body{
 .text-primary-color{
     color:#FF42A5;
 }
+.primary-style{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    color: transparent;
+   -webkit-background-clip: text;
+}
+.section-title{
+    font-size: 48px;
+    font-weight: 700;
+}
+.section-description{
+    color: #534C64;
+    font-size: 20px;
+    font-weight: 500;
+}
 
 /* nav related style */
 nav{
@@ -132,7 +146,9 @@ font-weight: 500;
      font-weight: 500;
     margin-bottom: 10px;
 }
-
+.banner-content p i{
+    
+}
 .banner-content .banner-button{
         margin-right:20px;
 }
@@ -143,6 +159,35 @@ font-weight: 500;
 .banner-img img{
     width: 100%;
    
+}
+/* games related style */
+.games{
+    padding:120px 0;
+}
+.games .games-title{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.games .games-description{
+    text-align: center;
+}
+.games-container{
+    max-width: 1400px;
+    margin:40px auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:24px;
+}
+.games-container .single-card{
+   
+}
+.single-card img{
+    width:100%;
+    border:none;
+}
+.single-card p{
+    width:100%;
+    margin-top: 10px;
 }
 /* Responsive media query */
 /* mobile devices */
@@ -167,6 +212,20 @@ font-weight: 500;
     .banner-content{
         padding:70px 0px 100px;
     }
+    .games-container{
+        grid-template-columns: repeat(1,1fr);
+        padding: 20px;
+      
+    }
+    .games .games-title{
+        font-size:20px ;
+    }
+    .games .games-description{
+        font-size: 15px;
+    }
+    .single-card img{
+        margin-top: 20px;
+    }
 }
    
 @media screen and (min-width:576px) and (max-width:992px) {
@@ -184,5 +243,10 @@ font-weight: 500;
     }
     .banner-container{
         padding:50px  10px;
+    }
+    .games-container{
+        grid-template-columns: repeat(2,1fr);
+        padding: 20px;
+      
     }
 }
