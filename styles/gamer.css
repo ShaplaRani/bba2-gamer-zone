@@ -127,6 +127,9 @@ font-weight: 500;
     background-image: url('../images/Group\ 14.png'),linear-gradient(223deg, rgba(140, 87, 238, 0.03) 0%, rgba(241, 68, 174, 0.03) 100%);
     background-blend-mode: overlay;
     background-size: cover; 
+    padding-left:50px;
+    padding:50px;
+    
     
 }
 .banner-content h2{
@@ -364,11 +367,7 @@ footer .social-link{
     display:flex;
     justify-content: center;
     gap:60px;
-    color:;
     margin-bottom:20px;
-    
-    
-
 }
 footer .text{
     display: flex;
@@ -408,6 +407,7 @@ footer > p{
     }
     .banner-content{
         padding:70px 10px 100px;
+        margin-bottom: 50px;
     }
 
 
@@ -530,7 +530,6 @@ footer > p{
        
     }
 
-
     .we-are-gamer-container .we-are-gamer-img{
         width: 100%;
     }
@@ -568,8 +567,6 @@ footer > p{
     .button-container{
         padding:0px;
     }
-
-
 
     .single-button > img{
         width: 30px;
