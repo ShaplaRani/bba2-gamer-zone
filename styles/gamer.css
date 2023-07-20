@@ -126,8 +126,8 @@ font-weight: 500;
     margin-top:40px;
     background-image: url('../images/Group\ 14.png'),linear-gradient(223deg, rgba(140, 87, 238, 0.03) 0%, rgba(241, 68, 174, 0.03) 100%);
     background-blend-mode: overlay;
-    background-size: contain; 
-    background-repeat: no-repeat;
+    background-size: cover; 
+    
 }
 .banner-content h2{
     color: #0B0223;
@@ -150,7 +150,7 @@ font-weight: 500;
     margin-bottom: 10px;
 }
 .banner-content p i{
-    
+    color:#F948B2;
 }
 .banner-content .banner-button{
         margin-right:20px;
@@ -498,7 +498,9 @@ footer > p{
    
 @media screen and (min-width:576px) and (max-width:992px) {
     .nav-container,
-    .play-instantly-container{
+    .play-instantly-container,
+    .we-are-gamer .we-are-gamer-container
+    {
         flex-direction: column;
     }
 
@@ -510,9 +512,36 @@ footer > p{
         margin-top: 30px;
         width: 80%;
     }
+
+    .banner-container{
+        flex-direction: column-reverse;
+    }
     .banner-container{
         padding:50px  10px;
     }
+    .banner-img
+    {
+        width:100%;
+    }
+    .banner-content{
+        width:100%;
+        text-align: center;
+        padding:50px 0;
+       
+    }
+
+
+    .we-are-gamer-container .we-are-gamer-img{
+        width: 100%;
+    }
+    .we-are-gamer-container .we-are-gamer-content{
+        width: 100%;
+        text-align: center;
+        margin-left: 0px;
+        padding:70px 20px; 
+    }
+   
+
     .games-container{
         grid-template-columns: repeat(2,1fr);
         padding: 20px;
